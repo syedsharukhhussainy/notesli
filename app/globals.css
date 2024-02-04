@@ -63,3 +63,23 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+.bn-container[data-color-scheme] {
+  --bn-colors-editor-text: #09090b;
+  --bn-colors-editor-background: #ffffff;
+
+  --bn-border-radius: 0px;
+  --bn-font-family: "Outfit", sans-serif;
+}
+
+/* Changes for dark mode */
+.bn-container[data-color-scheme="dark"] {
+  --bn-colors-editor-text: #ffffff;
+  --bn-colors-editor-background: var(--background) !important;
+}
+
+.bn-editor {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  font-size: 18px !important;
+}
